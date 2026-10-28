@@ -1,0 +1,6 @@
+{
+  "name": "Daily Routine",
+  "description": "A professional, modern and mobile-friendly Daily Task & Routine Manager App to manage daily tasks, track morning-to-night routines, calendars, reminders, and streaks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

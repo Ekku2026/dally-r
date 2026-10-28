@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="60%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#312e81" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Base Rounded Background -->
+  <rect x="24" y="24" width="464" height="464" rx="100" fill="url(#bgGrad)" filter="url(#shadow)" />
+  
+  <!-- Subtle Inner Glow Border -->
+  <rect x="24" y="24" width="464" height="464" rx="100" fill="none" stroke="url(#glowGrad)" stroke-width="8" />
+
+  <!-- Inner Checkmark & Clock Badge -->
+  <g transform="translate(256, 256)">
+    <!-- White Card Circle -->
+    <circle r="150" fill="#ffffff" opacity="0.15" />
+    <circle r="128" fill="#ffffff" />
+    
+    <!-- Checkmark Path in Indigo -->
+    <path d="M-55 2 L-15 42 L65 -38" fill="none" stroke="#4f46e5" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Clock accent dot in Amber -->
+    <circle cx="50" cy="50" r="16" fill="#f59e0b" />
+  </g>
+</svg>
